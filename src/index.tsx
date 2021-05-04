@@ -7,7 +7,6 @@ import { unpkgPathPlugin } from './plugins/unpkg-path-plugin';
 const App = () => {
   const ref = useRef<any>();
   const iframe = useRef<any>();
-  const [code, setCode] = useState('');
   const [input, setInput] = useState('');
 
   const startService = async () => {
@@ -25,6 +24,8 @@ const App = () => {
     if(!ref.current){
       return;
     }
+
+    iframe.current.srcdoc = html;
 
     const result = await ref.current.build({
       entryPoints: ['index.js'],
@@ -67,8 +68,7 @@ const App = () => {
     <div>
       <button onClick={onClick}>Submit</button>  
     </div>  
-    <pre>{code}</pre>
-    <iframe ref={iframe} title="code" sandbox="allow-scripts" srcDoc={html}/>
+    <iframe ref={iframe} title="code-preview" sandbox="allow-scripts" srcDoc={html}/>
   </div>;
 };
 
