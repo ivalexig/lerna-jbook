@@ -1,0 +1,5 @@
+.preview-wrapper iframe {
+  height: 100%;
+  background-color: white;
+  pointer-events: none;
+}
