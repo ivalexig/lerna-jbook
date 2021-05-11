@@ -25,13 +25,13 @@ const TextEditor: React.FC = () => {
   }, []);
 
   return (
-    <div className="text-editor">
+    <div className="text-editor card">
       {editing ? (
-        <div ref={ref}>
+        <div ref={ref} className="card-content">
           <MDEditor value={value} onChange={(v) => setValue(v || '')} />
         </div>
       ) : (
-        <div onClick={() => setEditing(true)}>
+        <div onClick={() => setEditing(true)} className="card-content">
           <MDEditor.Markdown source={value} />
         </div>
       )}
