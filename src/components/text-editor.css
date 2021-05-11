@@ -1,0 +1,10 @@
+/* fix for conflict with bulma css library */
+.w-md-editor .title {
+  line-height: unset;
+  font-size: unset;
+  font-weight: unset;
+}
+
+.w-md-editor ul {
+  line-height: 1;
+}
