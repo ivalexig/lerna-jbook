@@ -1,4 +1,5 @@
 .preview-wrapper {
+  position: relative;
   flex-grow: 1;
   overflow: hidden;
 }
@@ -8,4 +9,11 @@
   width: 100%;
   background-color: white;
   pointer-events: none;
+}
+
+.preview-error {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: red;
 }
