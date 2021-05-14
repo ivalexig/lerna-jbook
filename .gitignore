@@ -22,6 +22,7 @@ composer.lock
 
 # Project Specific
 packages/*/node_modules
+packages/*/dist
 packages/*/*.log
 packages/*/lib
 packages/*/tmp
