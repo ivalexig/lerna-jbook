@@ -21,6 +21,7 @@ composer.lock
 *.swo
 
 # Project Specific
+node_modules
 packages/*/node_modules
 packages/*/dist
 packages/*/*.log
@@ -31,3 +32,4 @@ packages/*/coverage/
 packages/*/.nyc_output/
 packages/*/.eslintcache
 packages/*/.env
+

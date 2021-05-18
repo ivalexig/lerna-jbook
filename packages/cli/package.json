@@ -17,11 +17,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@myjsnotes/local-client": "^1.0.0"
+    "@myjsnotes/local-client": "^0.1.0"
   },
   "devDependencies": {
-    "@myjsnotes/local-api": "^1.0.0",
     "commander": "^7.2.0",
+    "@myjsnotes/local-api": "^1.0.0",
     "@types/node": "^15.0.3",
     "esbuild": "0.8.26",
     "typescript": "^4.2.4"
